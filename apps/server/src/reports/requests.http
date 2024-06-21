@@ -1,0 +1,19 @@
+POST http://localhost:8080/reports
+Content-Type: application/json
+
+{
+    "name": "London",
+    "weather": "Cloudy",
+    "temp": 27,
+    "feels_like": 29,
+    "max_temp": 30,
+    "min_temp": 22
+}
+
+
+### Get hundred reports
+GET http://localhost:8080/reports/all
+
+
+### Get hundred reports by query
+GET http://localhost:8080/reports/search?query=Kiev
